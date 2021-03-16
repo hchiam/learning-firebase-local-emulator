@@ -10,8 +10,9 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
 ```bash
 curl -sL firebase.tools | bash
-firebase init
-# I personally chose the firestore and emulators option, and opted out of using a default project
+# firebase logout
+# firebase login
+firebase init # I personally chose the firestore and emulators option, and opted out of using a default project
 ```
 
 and then:
@@ -20,21 +21,37 @@ and then:
 firebase emulators:start
 ```
 
-## Maybe helpful info
+## Local Firebase Emulator UI
 
-<https://stackoverflow.com/questions/57537017/how-to-use-firestore-emulator-from-client>
+<https://www.youtube.com/watch?v=pkgvFNPdiEs>
 
 ```bash
-npm init
-npm i -D @firebase/testing
-firebase setup:emulators:firestore
-firebase emulators:start # instead of: firebase serve --only firestore
+npm i -g firebase-tools
+firebase --version
+# firebase logout
+# firebase login
+firebase init
+firebase emulators:start # localhost:4000
+```
+
+```js
+firestore.doc("hello/world").set({ hello: "world!" });
+
+firestore
+  .doc("hello/world")
+  .get()
+  .then((snap) => console.log(snap.data()));
+```
+
+To backup and reuse local data of the running emulator:
+
+```bash
+firebase emulators:export seed
+# (remember the export path)
+# (and then upon restarting the emulator:)
+firebase emulators:start --import seed
 ```
 
 ## More examples
 
 <https://github.com/firebase/snippets-web>
-
-## Local Firebase Emulator UI
-
-<https://www.youtube.com/watch?v=pkgvFNPdiEs>
