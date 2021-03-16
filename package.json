@@ -1,0 +1,24 @@
+{
+  "name": "learning-firebase-local-emulator",
+  "version": "1.0.0",
+  "description": "Just one of the things I'm learning. <https://github.com/hchiam/learning>",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@firebase/testing": "^0.20.11",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hchiam/learning-firebase-local-emulator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hchiam/learning-firebase-local-emulator/issues"
+  },
+  "homepage": "https://github.com/hchiam/learning-firebase-local-emulator#readme"
+}
