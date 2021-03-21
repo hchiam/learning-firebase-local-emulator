@@ -55,3 +55,7 @@ firebase emulators:start --import seed
 ## More examples
 
 <https://github.com/firebase/snippets-web>
+
+## More on Firestore in general
+
+<https://github.com/hchiam/learning-firestore>
