@@ -52,6 +52,13 @@ firebase emulators:export seed
 firebase emulators:start --import seed
 ```
 
+You might also find interesting:
+
+```bash
+firebase emulators:start --import seed --export-on-exit=seed
+# see it repopulated at http://localhost:4000/firestore
+```
+
 ## More examples
 
 <https://github.com/firebase/snippets-web>
