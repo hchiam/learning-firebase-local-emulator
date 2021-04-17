@@ -50,6 +50,7 @@ firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 database = firebase.firestore();
 if (location.hostname === "localhost") {
+  // to use the emulator instead of the real DB:
   database.useEmulator("localhost", 8080);
 }
 ```
