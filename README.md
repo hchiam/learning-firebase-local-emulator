@@ -43,6 +43,17 @@ firestore
   .then((snap) => console.log(snap.data()));
 ```
 
+```js
+firebaseConfig = {
+  projectId: ...your-project-id-here...,
+};
+firebase.initializeApp(firebaseConfig);
+database = firebase.firestore();
+if (location.hostname === "localhost") {
+  database.useEmulator("localhost", 8080);
+}
+```
+
 To backup and reuse local data of the running emulator:
 
 ```bash
