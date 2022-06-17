@@ -1,14 +1,14 @@
 # Learning Firebase Local Emulator Suite
 
-Just one of the things I'm learning. <https://github.com/hchiam/learning>
+Just one of the things I'm learning. https://github.com/hchiam/learning
 
-<https://firebase.google.com/docs/emulator-suite/connect_and_prototype>
+https://firebase.google.com/docs/emulator-suite/connect_and_prototype
 
-<https://firebase.google.com/docs/emulator-suite/connect_firestore>
+https://firebase.google.com/docs/emulator-suite/connect_firestore
 
 ## Very basic setup
 
-```bash
+```sh
 curl -sL firebase.tools | bash
 # firebase logout
 # firebase login
@@ -17,15 +17,15 @@ firebase init # I personally chose the firestore and emulators option, and opted
 
 and then:
 
-```bash
+```sh
 firebase emulators:start
 ```
 
 ## Local Firebase Emulator UI
 
-<https://www.youtube.com/watch?v=pkgvFNPdiEs>
+https://www.youtube.com/watch?v=pkgvFNPdiEs
 
-```bash
+```sh
 npm i -g firebase-tools
 firebase --version
 # firebase logout
@@ -57,7 +57,7 @@ if (location.hostname === "localhost") {
 
 To backup and reuse local data of the running emulator:
 
-```bash
+```sh
 firebase emulators:export seed
 # (remember the export path)
 # (and then upon restarting the emulator:)
@@ -66,15 +66,15 @@ firebase emulators:start --import seed
 
 You might also find interesting:
 
-```bash
+```sh
 firebase emulators:start --import seed --export-on-exit=seed
 # see it repopulated at http://localhost:4000/firestore
 ```
 
 ## More examples
 
-<https://github.com/firebase/snippets-web>
+https://github.com/firebase/snippets-web
 
 ## More on Firestore in general
 
-<https://github.com/hchiam/learning-firestore>
+https://github.com/hchiam/learning-firestore
