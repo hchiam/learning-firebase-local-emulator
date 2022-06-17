@@ -6,7 +6,17 @@ https://firebase.google.com/docs/emulator-suite/connect_and_prototype
 
 https://firebase.google.com/docs/emulator-suite/connect_firestore
 
-## Very basic setup
+## Testing out this repo
+
+After you clone this repo to you local machine, run these CLI commands: (no need to `npm install` first)
+
+```sh
+cd learning-firebase-local-emulator
+npm i -g firebase-tools
+firebase init
+```
+
+## Very basic setup from scratch
 
 ```sh
 curl -sL firebase.tools | bash
