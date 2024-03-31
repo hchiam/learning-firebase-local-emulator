@@ -23,6 +23,9 @@ curl -sL firebase.tools | bash
 # firebase logout
 # firebase login
 firebase init # I personally chose the firestore and emulators option, and opted out of using a default project
+
+# you might have to
+firebase login --reauth
 ```
 
 and then:
